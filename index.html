@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <header class="header">
+        <h1>Mi plata</h1>
+    </header>
+    <main>
+        <div class="main_user main_user_hidden">
+            <figure class="back_figure hidden"><img src="flecha-izquierda.png" alt=""></figure>
+            <!-- Seccion de Retiro -->
+            <section class="retiro_section hidden" >
+                <h1>¿Cuanto deseas retirar?</h1>
+                <input type="Number"  class="input" placeholder="Monto" id="retiro_monto">
+                <button class="main_user_cta" id="retirar_accion">Retirar</button>
+            </section>
+
+            <!-- Seccion de depositar -->
+            <section class="deposito_section hidden" >
+                <h1>¿Cuanto deseas depositar?</h1>
+                <input type="Number"  class="input" placeholder="Monto" id="depositar_monto">
+                <button class="main_user_cta" id="deposito_accion">Depositar</button>
+            </section>
+
+             <!-- Seccion movimientos -->
+             <section class="movimientos_section hidden">
+                <table class="table_movimientos">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Movimiento</th>
+                            <th>Monto</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- Aquí se agregarán las filas dinámicamente -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Consultar saldo -->
+            <section class="saldo_section hidden">
+                <h1>Su saldo es de:</h1>
+                <span class="saldo">$5000</span>
+            </section>
+
+            <!-- Cambiar contraseña -->
+            <section class="cambiar_contraseña hidden" >
+                <h1>Cambiar contraseña</h1>
+                <input type="Number"  class="input" placeholder="Contraseña actual" id="contraseña_actual">
+                <input type="Number"  class="input" placeholder="Contrasela nueva" id="contraseña_nueva">
+                <button class="main_user_cta" id="cambiar_contraseña_accion">Cambiar contraseña</button>
+            </section>
+
+
+        <section class="main_user_options">
+            <h1>Bienvenido!</h1>
+
+           
+           
+            
+            <section class="Propetario_details">
+                <figure class="Propetario_details_figure"><img src="foto-perfil.webp" alt=""></figure>
+                <section class="Propetario_details_text">
+                <span class="user_title">Nombre: </span>
+                <span class="user_title">CC: </span>
+                <span class="user_title">Numero Cuenta </span>
+            </section>
+            
+            </section>
+
+            <section class="main_user_ctas">
+                <button class="main_user_cta" id="retirar">Retirar</button>   
+                <button class="main_user_cta" id="saldo">Consultar Saldo</button>   
+                <button class="main_user_cta" id="deposito_menu">Consignar</button>   
+                <button class="main_user_cta" id="Cambiar_contraseña">Cambiar contraseña</button>   
+                <button class="main_user_cta" id="movimientos">Consultar Movimiento</button> 
+                <button class="main_user_cta" id="salir">Salir</button> 
+            </section>
+              
+        </section>
+    </div>
+        <div class="container container_left">  
+           
+            
+                <section class="container_form register">
+                <h1>Crear cuenta</h1>
+                <form action="" class="form" id="form_register">
+                    <div class="input_container">
+                        
+                        <input type="text" class="input" placeholder="Nombre" name="Nombre">
+                    </div>
+                   
+                    <div class="input_container">
+                        <input type="text" class="input" placeholder="Apellido" name="Apellido">
+                    </div>
+                   
+                    <div class="input_container">
+                       
+                        <input type="number" class="input" placeholder="Cedula" name="CC">
+                    </div>
+                   
+
+                    <div class="input_container">
+                        
+                        <input type="text" class="input" placeholder="Nombre de usuario" name="userName">
+                    </div>
+                    <div class="input_container">
+                        <input type="password" class="input" placeholder="Password" name="Contraseña">
+                    </div>
+                    
+                    
+                    <button class="form_cta button_form" id="cta_register">Registrarse</button>
+                  </form>
+            </section>
+             <section class="container_form inicio">
+                <h1>Iniciar Sesion</h1>
+                <form action="" class="form" id="form_login">
+                    <div class="input_container">
+                        <p class="error_text"></p>
+                        <input type="text" class="input" placeholder="Nombre de usuario" name="userName">
+                    </div>
+                   
+                
+                    <div class="input_container">
+                        <input type="password" class="input" placeholder="password" name="password">
+                    </div>
+                    
+                    
+                    <button class="form_cta button_form" id="cta_login">Iniciar Sesion</button>
+                  </form>
+            </section> 
+            
+            
+
+
+
+
+
+
+
+
+             
+
+            <section class="toogle_container ">
+                <section class="toogle toogle_left">
+                    <section class="toogle_text">
+                        <h1>Bienvenido a MI PLATA</h1>
+                        <p>Inicia sesión en MI PLATA y accede a todas tus soluciones financieras personalizadas.</p> 
+                        <button class="toogle_cta button_form" id="iniciar">Registrarse</button>
+                 </section>
+                 
+                    </section>  
+                    <section class="toogle toogle_right toogle_right_active">
+                        <section class="toogle_text">
+                            <h1>Bienvenido a MI PLATA</h1>
+                         <p>Únete a MI PLATA y accede a soluciones financieras personalizadas. Regístrate hoy mismo.</p> 
+                         <button class="toogle_cta button_form" id="register">Iniciar</button>
+                     </section> 
+            </section>
+          
+           
+
+                
+
+            
+            
+
+           
+            
+        </div> 
+        
+    </main>
+</body>
+<script src="index.js" type="module"></script>
+</html>
